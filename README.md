@@ -27,7 +27,7 @@ creation and maintenance of summaries by exploring less than 20\% of datasets.
 
 ### Installation
 
-- Install sage-jena, fedup, raw-jena
+- Install [https://github.com/Chat-Wane/sage-jena][sage-jena],[https://github.com/Chat-Wane/fedup][fedup], [https://github.com/GDD-Nantes/raw-jena][raw-jena]
 
 - Load dataset into Apache Jena by TDB2 XLoader
 
