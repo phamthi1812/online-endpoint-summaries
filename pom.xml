@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>fr.gdd</groupId>
+  <artifactId>online-endpoint-summaries</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>online-endpoint-summaries</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <jdk.version>21</jdk.version>
+    <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+    <rdf4j.version>4.3.8</rdf4j.version>
+    <!--		<maven-surefire-plugin.version>3.0.0</maven-surefire-plugin.version>-->
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.eclipse.rdf4j</groupId>
+      <artifactId>rdf4j-model</artifactId>
+      <version>${rdf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.rdf4j</groupId>
+      <artifactId>rdf4j-queryrender</artifactId>
+      <version>${rdf4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.rdf4j</groupId>
+      <artifactId>rdf4j-tools-federation</artifactId>
+      <version>${rdf4j.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>apache-jena-libs</artifactId>
+      <version>4.9.0</version>
+      <type>pom</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-fuseki</artifactId>
+      <version>4.9.0</version>
+      <type>pom</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-fuseki-core</artifactId>
+      <version>4.9.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>jena-fuseki-main</artifactId>
+      <version>4.9.0</version>
+    </dependency>
+
+    <dependency> <!-- logger of jena -->
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.9</version>
+    </dependency>
+    <dependency> <!-- setup simplelogger.properties -->
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>2.0.9</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.10.0</version>
+    </dependency>
+    <dependency>
+      <groupId>fr.gdd.sage</groupId>
+      <artifactId>sage-jena-tdb2</artifactId>
+      <version>0.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>fr.gdd</groupId>
+      <artifactId>fedup</artifactId>
+      <version>0.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>fr.gdd.sage</groupId>
+      <artifactId>sage-commons</artifactId>
+      <version>0.0.2</version>
+    </dependency>
+  </dependencies>
+
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven-compiler-plugin.version}</version>
+        <configuration>
+          <source>${jdk.version}</source>
+          <target>${jdk.version}</target>
+          <showDeprecation>true</showDeprecation>
+          <showWarnings>true</showWarnings>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
