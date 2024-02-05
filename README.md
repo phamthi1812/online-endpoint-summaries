@@ -16,20 +16,22 @@ creation and maintenance of summaries by exploring less than 20\% of datasets.
 
 **Keywords**: Semantic Web ,SPARQL , Sampling, Summary
 
-## Installation
 
 > **Note**
 > Installation instructions have only been tested on Ubuntu 20.04.6 LTS
 
 ### Dependencies
 
-- conda
 - maven
 - java 11 & 20 (JDK)
 
-### Step by step installation
+### Installation
+
+- Install sage-jena, fedup, raw-jena
 
 - Load dataset into Apache Jena by TDB2 XLoader
+
+- Queries are provided in this repo.
 
 - Install project dependencies
 
@@ -45,10 +47,11 @@ creation and maintenance of summaries by exploring less than 20\% of datasets.
 #### For SPO-Sampling:
 
 - Ground Truth Summary Size for FedShop200 is 5800 and LargeRDFBench is 6070
+- Run Sampling on SPO and write result to file. ( result is in format "number of random walks-corresponding summary size")
 - WARNING: It may converge but will take very long time!!!
 
     ```bash
-  java OnlineSummary --dataset pathToTDB2dataset --create_summary pathToNewSummary --GT groundtruth --spo --sampling
+  java OnlineSummary --dataset pathToTDB2dataset --create_summary pathToNewSummary --GT groundtruth --spo --sampling > result.txt
     ```
 #### For WA without Sampling:
 
@@ -67,4 +70,4 @@ creation and maintenance of summaries by exploring less than 20\% of datasets.
     ```
   
 
-### Number of random walks that we need to draw and the corresponding summary size will be printed out when you use the sampling flag
+### Number of random walks that we need to draw and the corresponding summary size will be printed out when you use the sampling flag so you can decide to write it into file as describe in the SPO-Sampling
