@@ -229,7 +229,6 @@ public class OnlineSummary {
                     i++;
                 } catch (NumberFormatException e) {
                     System.err.println("Invalid ground truth value provided.");
-                    System.exit(1); // Exit the program with an error code
                 }
             }else if (args[i].equals("--query") && i + 1 < args.length) {
                 queryFilePath = args[i + 1];

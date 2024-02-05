@@ -1,20 +1,18 @@
-# Online Sampling for Computing Summary Powered by RAW-Jena
+# Why is Sampling Essential in SPARQL? Exploring the Case of Online Endpoint Summaries
 
 ## Abstract
 
-If you try to collect simple statistics on online SPARQL endpoints,
-your SPARQL query is stopped after 60s due to fair usage
-policies. This prevents many important downstream tasks, including aggregate
-query processing, portal creation, and summarization. Many statistics
-can be realized with sampling, as included in the SQL
-standard since 2003. However, sampling is still not part of
-SPARQL. If integrating sampling in SPARQL seems reasonable, it has
-to demonstrate its effectiveness in a real semantic web use-case.
-%
-In this paper, we evaluate if sampling can be used to create
-summaries used in state-of-the-art SPARQL federation
-engines. Experimental studies sampling allows to create and maintain
-summaries just exploring less than 20\% of datasets.
+Collecting simple statistics from online public SPARQL
+endpoints is hampered by their fair usage policies. This restriction
+obstructs several critical operations, such as aggregate query
+processing, portal development, and data summarization. Online sampling allows
+to collect statistics while respecting fair usage policies. However, sampling has not yet been  integrated into the
+SPARQL standard. Although integrating sampling into the SPARQL
+standard appears beneficial, its effectiveness must be proven in a
+practical semantic web context. This poster investigates whether online sampling can
+generate summaries for use in cutting-edge SPARQL federation
+engines. Our experimental studies indicate that sampling enables the
+creation and maintenance of summaries by exploring less than 20\% of datasets.
 
 **Keywords**: Semantic Web ,SPARQL , Sampling, Summary
 
@@ -47,14 +45,14 @@ summaries just exploring less than 20\% of datasets.
 #### For SPO-Sampling:
 
 - Ground Truth Summary Size for FedShop200 is 5800 and LargeRDFBench is 6070
-- WARNING: It may converge but will take long time!!!
+- WARNING: It may converge but will take very long time!!!
 
     ```bash
   java OnlineSummary --dataset pathToTDB2dataset --create_summary pathToNewSummary --GT groundtruth --spo --sampling
     ```
 #### For WA without Sampling:
 
-- This is equivalent with executing the query to build the summary => It may takes very long time to finish!
+- This is equivalent with executing the query to build the summary => It may takes very long time to finish TOO!
 
     ```bash
   java OnlineSummary --dataset pathToTDB2dataset --query pathToQuery --create_summary pathToNewSummary --wa 
@@ -69,4 +67,4 @@ summaries just exploring less than 20\% of datasets.
     ```
   
 
-### It will print out the number of random walks that we need to draw to get the corresponding summary size when you use the sampling flag
+### Number of random walks that we need to draw and the corresponding summary size will be printed out when you use the sampling flag
