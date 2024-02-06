@@ -1,4 +1,4 @@
-# Why is Sampling Essential in SPARQL? Exploring the Case of Online Endpoint Summaries
+# Online Sampling of Summaries from Public SPARQL Endpoints
 
 ## Abstract
 

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="fedup" />
+        <module name="online-endpoint-summaries" />
       </profile>
     </annotationProcessing>
   </component>
