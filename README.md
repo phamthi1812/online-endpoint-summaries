@@ -27,7 +27,7 @@ creation and maintenance of summaries by exploring less than 20\% of datasets.
 
 ### Installation
 
-- Install [sage-jena], [fedup], [raw-jena]
+- Install [sage-jena], [fedup], [raw-jena] in [1]
 
 [sage-jena]:https://github.com/Chat-Wane/sage-jena
 [fedup]:https://github.com/Chat-Wane/fedup
@@ -70,8 +70,11 @@ creation and maintenance of summaries by exploring less than 20\% of datasets.
 - This is the recommended mode. You can modify the ground truth value to decide the size of summary that you want to obtain.
 
     ```bash
-  java OnlineSummary --dataset pathToTDB2dataset --query pathToQuery --create_summary pathToNewSummary --wa --sampling
+  java OnlineSummary --dataset pathToTDB2dataset --query pathToQuery --create_summary pathToNewSummary --GT desiredsummarysize --wa --sampling
     ```
   
 
 ### Number of random walks that we need to draw and the corresponding summary size will be printed out when you use the sampling flag so you can decide to write it into file as describe in the SPO-Sampling
+
+### Reference:
+[1] J. Aimonier-Davat, M.-H. Dang, P. Molli, B. Nédelec, and H. Skaf-Molli, RAW-JENA: Approximate Query Processing for SPARQL Endpoints.

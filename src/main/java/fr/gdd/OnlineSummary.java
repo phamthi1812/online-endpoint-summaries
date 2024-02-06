@@ -176,7 +176,6 @@ public class OnlineSummary {
     }
     @Disabled
     public static void summary_sampling_SPO(String pathToDataset, String pathToSummary, Integer groundtruth) {
-        ProgressJenaIterator.NB_WALKS = 10_000;
 
         Summary hgs = SummaryFactory.createModuloOnSuffix(1, Location.create(pathToSummary));
         JenaBackend backend = new JenaBackend(pathToDataset);
