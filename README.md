@@ -27,7 +27,7 @@ creation and maintenance of summaries by exploring less than 20\% of datasets.
 
 ### Installation
 
-- Install [sage-jena], [fedup], [raw-jena] in [1]
+- Install [sage-jena], [fedup] in [2], [raw-jena] in [1]
 
 [sage-jena]:https://github.com/Chat-Wane/sage-jena
 [fedup]:https://github.com/Chat-Wane/fedup
@@ -77,4 +77,5 @@ creation and maintenance of summaries by exploring less than 20\% of datasets.
 ### Number of random walks that we need to draw and the corresponding summary size will be printed out when you use the sampling flag so you can decide to write it into file as describe in the SPO-Sampling
 
 ### Reference:
-[1] J. Aimonier-Davat, M.-H. Dang, P. Molli, B. Nédelec, and H. Skaf-Molli, RAW-JENA: Approximate Query Processing for SPARQL Endpoints.
+[1] Julien Aimonier-Davat, Minh-Hoang Dang, Pascal Molli, Brice Nédelec, and Hala Skaf-Molli. 2023. RAW-JENA: Approximate Query Processing for SPARQL Endpoints.
+[2] Julien Aimonier-Davat, Minh-Hoang Dang, Pascal Molli, Brice Nédelec, and Hala Skaf-Molli. 2024. FedUP: Querying Large-Scale Federations of SPARQL Endpoints.
