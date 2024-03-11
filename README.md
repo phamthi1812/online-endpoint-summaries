@@ -78,4 +78,5 @@ creation and maintenance of summaries by exploring less than 20\% of datasets.
 
 ### Reference:
 [1] Julien Aimonier-Davat, Minh-Hoang Dang, Pascal Molli, Brice Nédelec, and Hala Skaf-Molli. 2023. RAW-JENA: Approximate Query Processing for SPARQL Endpoints.
+
 [2] Julien Aimonier-Davat, Minh-Hoang Dang, Pascal Molli, Brice Nédelec, and Hala Skaf-Molli. 2024. FedUP: Querying Large-Scale Federations of SPARQL Endpoints.
